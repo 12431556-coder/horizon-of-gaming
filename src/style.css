@@ -1,0 +1,762 @@
+body {
+  background: url(/images/Copilot_20260422_111905.png);
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px red;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px red;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+header {
+  background-color: #111;
+  border-bottom: 2px solid red;
+  padding-bottom: 5px;
+}
+
+/* ── Navigation ───────────────────────────────────────────── */
+
+nav {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 0 0 10px red;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  background: url('/images/ps5pro.jpeg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 350px 200px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2,
+.hero p,
+.hero .btn {
+  position: relative;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+
+.btn {
+  background-color: #ff4500;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #ff4500;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1e90ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #1e90ff;
+  text-shadow: #1e90ff;
+}
+
+/* ── Console Showcase (Home) ──────────────────────────────── */
+
+.image-box {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+}
+
+.image-box img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.image-box img:hover {
+  box-shadow: 0 0 25px red;
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.pics {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ── Featured Games (Home) ────────────────────────────────── */
+
+.gamesboxtitle {
+  text-align: center;
+  color: lavender;
+}
+
+.featured-games {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px auto;
+  flex-wrap: wrap;
+}
+
+.featured-games img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ── Accessories Preview (Home) ───────────────────────────── */
+
+.accessories-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 15px;
+  flex-wrap: wrap;
+}
+
+.accs-card {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.accs-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.accs-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* ── Support Section (Home) ───────────────────────────────── */
+
+.support-section {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.icon-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Arial Black', sans-serif;
+  margin: 15px 0;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  color: #ff4d4d;
+  text-shadow: 0 0 8px #ff4d4d;
+}
+
+.icon-line:nth-child(2) .material-symbols-outlined {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffae00;
+}
+
+/* ── Products Page — Shared card price ────────────────────── */
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  align-self: center;
+  margin-top: auto;
+}
+
+/* ── Consoles Section ─────────────────────────────────────── */
+
+.Title1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px red;
+}
+
+.CONSOLES {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.console-card {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.console-card h3,
+.console-card p {
+  margin: 10px 0;
+}
+
+.console-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.console-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* ── Laptops Section ──────────────────────────────────────── */
+
+.Title2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px red;
+}
+
+.PCS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.pc-card {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.pc-card h3,
+.pc-card p {
+  margin: 10px 0;
+}
+
+.pc-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.pc-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* ── Games Section ────────────────────────────────────────── */
+
+.GAMES {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.game-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.game-card h3,
+.game-card p {
+  margin: 10px 0;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* ── Accessories Section ──────────────────────────────────── */
+
+.ACCS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.acc-card {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.acc-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.acc-card h3,
+.acc-card p {
+  margin: 10px 0;
+}
+
+.acc-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* ── Gift Cards Section ───────────────────────────────────── */
+
+.GIFTCARDS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.gift-card {
+  display: flex;
+  flex-direction: column;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.gift-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.gift-card h3,
+.gift-card p {
+  margin: 10px 0;
+}
+
+.gift-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+/* ── Shared card button styles ────────────────────────────── */
+
+.console-card .btn,
+.pc-card .btn,
+.game-card .btn,
+.acc-card .btn,
+.gift-card .btn {
+  margin-top: auto;
+  align-self: center;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+.console-card .btn:hover,
+.pc-card .btn:hover,
+.game-card .btn:hover,
+.acc-card .btn:hover,
+.gift-card .btn:hover {
+  background-color: #1e90ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #1e90ff;
+  text-shadow: #1e90ff;
+
+}
+
+/* ── About Page ───────────────────────────────────────────── */
+
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* ── Contact Page ─────────────────────────────────────────── */
+
+.contact {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid red;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px red;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px red;
+}
+
+.contact-form .btn {
+  display: inline-block;
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+.contact-form .btn:hover {
+  background-color: #fff;
+  color: red;
+  text-shadow: 0 0 8px red;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+/* --- Cart --------------------------------------------------*/
+
+.checkout {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  margin-top: 2rem;
+}
+
+.checkout-btn {
+  background: #ff4500;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checkout-btn:hover {
+  background: #1e90ff;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem; /* spacing between buttons */
+  margin-left: 1rem;
+}
+
+
+
+.remove-btn {
+  background: #dc3545;
+}
+
+.remove-btn:hover {
+  background: #1e90ff;
+}
+
+.checkout-info {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.75rem;           
+  align-items: flex-start; 
+}
+
+.checkout-info input {
+  width: 250px;          
+  max-width: 100%;        
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* ── Footer ───────────────────────────────────────────────── */
+
+.site-footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 40px;
+  border-top: 2px solid red;
+}
+
+.site-footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  text-shadow: 0 0 5px red;
+}
+
+.footer-nav {
+  margin: 15px 0;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover {
+  color: cyan;
+  text-shadow: 0 0 8px cyan;
+}
+
+/* ── Social Icons ─────────────────────────────────────────── */
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px red);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 150px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .CONSOLES,
+  .PCS,
+  .GAMES,
+  .ACCS,
+  .GIFTCARDS,
+  .accessories-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .console-card,
+  .pc-card,
+  .game-card,
+  .acc-card,
+  .gift-card {
+    width: 90%;
+  }
+
+  .console-card img,
+  .pc-card img,
+  .game-card img,
+  .acc-card img,
+  .gift-card img {
+    height: auto;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .console-card,
+  .pc-card,
+  .game-card,
+  .acc-card,
+  .gift-card {
+    width: 45%;
+  }
+}
