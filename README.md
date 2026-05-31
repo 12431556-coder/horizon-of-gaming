@@ -1,6 +1,22 @@
 # Horizon of Gaming 🎮
 
 A React-based gaming e-commerce web application for PlayStation, Xbox, Nintendo, and PC products.
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### About Page
+![About Page](screenshots/about.png)
+
+### Products Page
+![Products Page](screenshots/products.png)
+
+### Cart Page
+![Cart Page](screenshots/cart.png)
+
+### Contact Page
+![Contact Page](screenshots/contact.png)
 
 ---
 
