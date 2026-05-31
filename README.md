@@ -1,6 +1,9 @@
 # Horizon of Gaming 🎮
 
 A React-based gaming e-commerce web application for PlayStation, Xbox, Nintendo, and PC products.
+## Live Demo
+
+👉 [View Horizon of Gaming on GitHub Pages](https://12431556-coder.github.io/horizon-of-gaming/)
 ## Screenshots
 
 ### Home Page
